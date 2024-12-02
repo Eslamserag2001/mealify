@@ -1,0 +1,280 @@
+/* Styling for desktop and larger screens */
+
+/* 
+@media (min-width: 1200px) {
+    
+    .home {
+        flex-wrap: nowrap;
+    }
+    .enj-center {
+        width: 50%;
+    }
+    .enjoy {
+        width: 50%;
+    }
+    .animation img {
+        width: 70%;
+    }
+
+    .chef-cont {
+        justify-content: space-around;
+    }
+    .chefs-img {
+        width: 28%;
+    }
+
+    .container {
+        grid-template-areas:
+            'header1 header1 header2 header2 header3 header3'
+            'body1 body1 body2 body2 body3 body3'
+            'footer1 footer1 footer2 footer2 footer3 footer3';
+    }
+    .img1 { grid-area: header1; }
+    .img2 { grid-area: header2; }
+    .img3 { grid-area: header3; }
+    .img4 { grid-area: body1; }
+    .img5 { grid-area: body2; }
+    .img6 { grid-area: footer1; }
+    .img7 { grid-area: footer2; }
+
+    
+    .form form input {
+        width: 45%;
+    }
+    .form form textarea {
+        width: 90%;
+    }
+
+    .end {
+        display: flex;
+        justify-content: space-between;
+    }
+    .mlify {
+        width: 25%;
+    }
+    .Subscribe {
+        width: 35%;
+    }
+    .get {
+        width: 25%;
+    }
+} */
+
+/* Styling for tablets (between 768px and 1200px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .home {
+        flex-wrap: wrap;
+    }
+
+    .enj-center {
+        width: 70%;
+    }
+
+    .enjoy {
+        width: 50%;
+    }
+
+    .fs-20 {
+        font-size: 2.2em;
+    }
+
+    .animation img {
+        width: 80%;
+    }
+
+    /* Chefs section */
+    .chef-cont {
+        justify-content: space-around;
+    }
+
+    .chefs-img {
+        width: 45%;
+    }
+
+    /* Gallery section */
+    .container {
+        background-color: brown;
+        gap: 10px;
+        padding: 5px;
+        grid-template-areas:
+     'header1 header1 header2 header2 header3 header3'
+     'body1 body1 header2 header2 body3 body3'
+  'body1 body1 footer2 footer2 footer3 footer3';
+    }
+
+    .img1 { grid-area: header1;  }
+    .img2 {     grid-area: header2; }
+    .img3 {   grid-area: header3; }
+
+    .img4 {     grid-area: body1; }
+    .img5 {    grid-area: body3;  }
+    .img6 {      grid-area: footer3;  }
+    .img7 {     grid-area: footer2;   }
+
+    /* Contact form */
+    .form form input {
+        width: 45%;
+    }
+
+    .form form textarea {
+        width: 90%;
+    }
+
+    .end {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .mlify {
+        width: 100%;
+    }
+
+    .Subscribe {
+        width: 60%;
+    }
+
+    .get {
+        width: 40%;
+    }
+}
+
+/* Styling for mobile (below 768px) */
+@media (max-width: 767px) {
+
+    /* Body and Nav */
+    body {
+        font-size: 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .ul ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .milfy {
+        width: 100%;
+        text-align: center;
+    }
+
+    .milfy h1 {
+        font-size: 2rem;
+    }
+
+    /* Home Section */
+    .home {
+        flex-direction: column;
+    }
+
+    .enjoy {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+    .enj-center {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+ 
+
+    .animation img {
+        width: 80%;
+    }
+
+    /* Chefs Section */
+    .chef-cont {
+        justify-content: center;
+    }
+
+    .chefs-img {
+        width: 90%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    /* Gallery Section */
+    .container {
+        grid-template-areas:
+            'header1 header1'
+            'body1 body1'
+            'footer1 footer1'
+            'footer2 footer2'
+            'footer3 footer3'
+            'footer4 footer4'
+            'footer5 footer5'
+            
+            
+            ;
+    }
+
+    .img1 {
+        grid-area: header1;
+    }
+
+    .img2 {
+        grid-area: body1;
+    }
+
+    .img3 {
+        grid-area: footer1;
+    }
+
+    .img4 {
+        grid-area: footer2;
+    }
+
+    .img5 {
+        grid-area: footer3;
+    }
+
+    .img6 {
+        grid-area: footer4;
+    }
+
+    .img7 {
+        grid-area: footer5;
+    }
+
+    iframe{
+        width: 98%;
+    }
+
+    .detail {width: 100%;}
+
+    .form form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form form textarea {
+        width: 100%;
+    }
+
+    /* End Section */
+    .end {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mlify,
+    .Subscribe,
+    .get {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .Subscribe input {
+        width: 80%;
+    }
+
+    .Subscribe button {
+        width: 50%;
+        margin-top:10px ;
+    }
+}
